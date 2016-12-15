@@ -1,0 +1,2 @@
+# JavaScriptElyDJ
+first javascript assignemnt 
