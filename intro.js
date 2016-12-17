@@ -4,16 +4,23 @@ var addList = function(e){
     var li = document.createElement('li');
     li.innerHTML = "Some text"
     li.addEventListener('click', removeList);
+    li.addEventListener("mouseover", on);
+    li.addEventListener("mouseout", off);
     ol.appendChild(li);
 };
 
+var fibs = 1
 var addListFib = function(index){
     var ol = document.getElementsByTagName('ol')[1];
     var li = document.createElement('li');
-    li.innerHTML = fib();
+    li.innerHTML = fib(fibs);
+    fibs+=1;
     li.addEventListener('click', removeList);
+    li.addEventListener("mouseover", on);
+    li.addEventListener("mouseout", off);
     ol.appendChild(li);
 };
+
 
 //removeList removes an element from the list
 var removeList = function(e){
@@ -32,6 +39,9 @@ var fib = function(n){
 
 var theButton = document.getElementById('b');
 theButton.addEventListener('click', addList);
+var theOtherButton = document.getElementById('b2');
+theOtherButton.addEventListener('click', addListFib);
+
 var list = document.getElementsByTagName('li');
 var i = 0;
 var li;
