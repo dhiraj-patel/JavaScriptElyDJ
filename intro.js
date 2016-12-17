@@ -22,3 +22,38 @@ while(i<list.length){
     li.addEventListener('click', removeList);
     i++;
 }
+
+var defHead = "Hello World";
+function on(e){
+    document.getElementById('h').innerHTML = this.innerHTML;
+};
+
+function off(e){
+    document.getElementById('h').innerHTML = defHead;
+}; 
+
+var d = 0;
+while(d<list.length){
+    li = document.getElementsByTagName('li')[d];
+    li.addEventListener("mouseover", on);
+    li.addEventListener("mouseout", off);
+    d++;
+}
+
+d=0;
+list = document.getElementsByTagName('div');
+while(d<list.length){
+    li = document.getElementsByTagName('div')[d];
+    li.addEventListener("mouseover", on);
+    li.addEventListener("mouseout", off);
+    d++;
+}
+
+d=0;
+list = document.getElementsByTagName('button');
+while(d<list.length){
+    li = document.getElementsByTagName('button')[d];
+    li.addEventListener("mouseover", on);
+    li.addEventListener("mouseout", off);
+    d++;
+}
