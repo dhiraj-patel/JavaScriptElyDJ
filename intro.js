@@ -22,12 +22,3 @@ while(i<list.length){
     li.addEventListener('click', removeList);
     i++;
 }
-/*while(index<ol.length){
-    li = ol[index];
-    console.log('hello');
-    li.addEventListener('click', removeList.index);
-    index++;
-    }*/
-//while index < 8:
-
-//li.addEventListener("click",removeList(index));
