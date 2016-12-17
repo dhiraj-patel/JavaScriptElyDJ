@@ -1,3 +1,4 @@
+//addList adds a new button
 var addList = function(e){
     var ol = document.getElementsByTagName('ol')[0];
     var li = document.createElement('li');
@@ -5,16 +6,22 @@ var addList = function(e){
     ol.appendChild(li);
 };
 
+//removeList removes an element from the list
 var removeList = function(index){
-    var ol = document.getElementsByTagName('ol')[0];
-    ol.remove(index);
+    this.remove(index);
     console.log('hello');
-}
+};
 
 var theButton = document.getElementById('b');
 theButton.addEventListener('click', addList);
-var li = document.getElementsByTagName('li')[0];
-var index = 0;
-while index < 8:
+li = document.getElementsByTagName('li')[0];
+li.addEventListener('click', removeList(0));
+/*while(index<ol.length){
+    li = ol[index];
+    console.log('hello');
+    li.addEventListener('click', removeList.index);
+    index++;
+    }*/
+//while index < 8:
 
-li.addEventListener("click",removeList(index);
+//li.addEventListener("click",removeList(index));
